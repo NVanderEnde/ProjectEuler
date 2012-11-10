@@ -1,0 +1,3 @@
+GPL, such as it is. These aren't really... Programs, and I don't see any need to
+protect them or whatever, but GitHub suggested I put this here and got mad when I
+dithered about.
