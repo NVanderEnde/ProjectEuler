@@ -7,9 +7,8 @@ of 3 or 5."""
 
 
 def brute_force(range):
-	"""This is the brute force method - iterate over the range, check each value
-	to see if it matches with the requirements. Generalized this is a O(n) 
-	algorithm, which is not great if you use large values for n."""
+	"""This is the brute force method - iterate over the range, check each 
+	value to see if it matches with the requirements."""
 	sum = 0
 
 	for x in xrange(range):
@@ -30,10 +29,8 @@ def better_solution(range):
 	be removed once."""
 	#The count of 3 multiples in range, etc.
 	#The 3 and 15 multiples need ranges +1 due to the way that Python's
-	#xrange function iterates - without it they ignore the remainder
-	#of the division
+	#xrange function iterates
 	countlist = [ (range / 3) +1, (range / 5) , (range / 15) +1 ]
-	#print countlist[0]
 	sumlist = [0, 0, 0]
 	integerlist = [3, 5, 15]
 	
