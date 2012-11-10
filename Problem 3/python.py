@@ -12,15 +12,20 @@ Taking the following approach: Starting with the first non-1 prime, check to
 see if it's a factor. If it is, reassign to that value and check the new value
 against the next integer value for factorization. This works because eventually
 you work down to a factor of n which cannot be divided (i keeps increasing) and
-then you hit the sqrt(n) upper bound, and you're done."""
+then you hit the sqrt(n) upper bound, and you're done.
+
+Iterating through 600 billion values would take, ehh, a long time, as would
+checking each iteration for factorization and prime-ness. This is considerably
+more efficient."""
 
 number = 600851475143
 def prime_factor(value):
 	count = 2
 	while count * count < value:
-		while value % count ==0:
+		if value % count ==0:
 			value = value / count
-		count += 1
+		else:
+			count += 1
 	return value
 
 solution = prime_factor(number)
