@@ -11,7 +11,7 @@ Find the largest palindrome made from the product of two 3-digit numbers."""
 #First, need to define a palindrome.
 
 def is_palindrome(value):
-	"""Cut the number is half, flip the second half, and compare. Returns
+	"""Cut the number in half, flip the second half, and compare. Returns
 	true or false."""
 	value = str(value)
 	split = len(value) / 2
