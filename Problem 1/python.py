@@ -29,7 +29,9 @@ def better_solution(range):
 	be removed once."""
 	#The count of 3 multiples in range, etc.
 	#The 3 and 15 multiples need ranges +1 due to the way that Python's
-	#xrange function iterates
+	#xrange function iterates, e.g. it compiles down to a C loop
+	#which treats the upper bound as a < statement (since the 5 counter
+	#divides evenly into our given range we get a "left-over" there anyway
 	countlist = [ (range / 3) +1, (range / 5) , (range / 15) +1 ]
 	sumlist = [0, 0, 0]
 	integerlist = [3, 5, 15]
