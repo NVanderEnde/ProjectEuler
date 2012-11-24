@@ -1,5 +1,6 @@
 #!C:/Python27
 #Contact: nvanderende@gmail.com
+import math
 
 """Taken from projecteuler.net/problems
 
