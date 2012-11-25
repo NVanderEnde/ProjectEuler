@@ -15,7 +15,7 @@ count = 20
 list = [ ]
 for x in xrange(1, 21):
 	list.append(x)
-"""
+
 while 1:
 	win = 0
 	for x in list:
@@ -31,12 +31,9 @@ while 1:
 	if win == 1:
 		break
 	count += 20
-	
-print count
-"""
 
 #The more efficient method that makes use of factorial properties
-#Creates the number, rather than finding it, by iteratively generating the 
+#creates the number, rather than finding it, by recursively generating the 
 #lowest common multiples for each successive number
 
 def greatest_common_denominator(x,y): 
