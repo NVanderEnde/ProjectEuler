@@ -40,7 +40,7 @@ print count
 #lowest common multiples for each successive number
 
 def greatest_common_denominator(x,y): 
-	return b and greatest_common_denominator(y, x % y) or x
+	return y and greatest_common_denominator(y, x % y) or x
 def lowest_common_multiple(x,y): 
 	return x * y / greatest_common_denominator(x, y)
 
