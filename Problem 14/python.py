@@ -39,7 +39,8 @@ def sequence_builder(hashmap, value):
 			hashmap[value] = 1 + sequence_builder(hashmap, 3 * value + 1)
 	return hashmap[value]
 
-for x in xrange (1, 1000000):
+#Since only odd initial numbers will generate the largest values, we can iterate over only those.
+for x in xrange (1, 1000000, 2):
 	chain_count = sequence_builder(hashmap, x)
 	if chain_count > solution [1]: solution = x, chain_count
 print solution
